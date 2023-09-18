@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: 'Smythe', cursive;
+    user-select:none;
+    max-width: 800px;
+    margin: auto;
+} 
+
+header{
+    background-image: url("https://img.freepik.com/fotos-premium/fast-food-gericht-auf-gelbem-hintergrund-fast-food-set-brathaehnchen-fleisch-burger-und-pommes-frites-fast-food-zum-mitnehmen_157927-24967.jpg");
+    background-size: cover;
+    padding: 20px 0px 0px 0px;
+    height: 200px;
+    width: 100%;
+    background-repeat: repeat-x;
+    background-position-y: bottom;
+    margin: 0px;
+    text-align: center;
+}
+header h1{
+    font-size: 70px;
+    margin: 0px;
+    color: white;
+    font-family: 'Smythe', cursive;
+}
+header p{
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+}
+.container, #basket{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 60px;
+    align-items: center;
+}
+.product{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap:20px;
+    border-bottom: 1px solid #D2D2D2;
+}
+.product .left{
+    width: 30%;
+}
+.product .left img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.container .product .middle{
+    width: 40%;
+}
+
+.product .right{
+    text-align: right;
+    width: 30%;
+    gap:10px;
+    font-size: 15px;
+}
+
+.increase{
+    background: white;
+    border-radius: 50%;
+}
+
+#basketData {
+    display: none;
+    padding: 20px 60px;    
+}
+
+#basket .product div{
+    width: 33%;
+  
+}
+
+#sum{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#complete{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    background-color: #16DB99;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 15px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 420px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: #212529;
+    color: whitesmoke;
+}
+
+.modal-inner{
+    width: 290px;
+    margin: 0 auto;
+}
+
+.modal-inner-loading{
+    text-align: center;
+}
+
+/* modal buttons */
+
+.close-modal-btn-container{
+    text-align: right;
+    margin: 9px;
+}
+
+.modal-close-btn {
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: whitesmoke;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:active{
+    color: red;
+    cursor: pointer;
+}
+
+
+.modal-choice-btns{
+    margin-top: 10px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-btn{
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+.modal-btns-reverse{
+    flex-direction: row-reverse;
+}
+
+/* modal input */
+
+input{
+    margin-top: 10px; 
+    border: 1px solid #212529;
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+#thanks-message{
+    display: none;
+    margin: auto;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    background-color: #ECFDF5;
+    width: 300px;
+    color: #065F46;
+    font-size: 25px;
+    margin-bottom: 20px;
+}

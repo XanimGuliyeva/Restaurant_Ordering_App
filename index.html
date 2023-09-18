@@ -1,0 +1,49 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@300&family=Smythe&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <h1>Jimmy’s Diner</h1>
+            <p>The best burgers and pizzas in town.</p>
+        </header>
+        <section class="container" id="container">
+
+        </section>
+        <div id='basketData'>
+                    <h2>Your basket</h2>
+                    <div id='basket'></div>
+                    <button id='complete'>Complete order</button>
+
+                    
+        </div>
+        <p id='thanks-message'>Thanks, James! Your order is on its way!</p> 
+        <div id='sum'></div>
+        <div class="modal" id="modal">
+		<div class="close-modal-btn-container">
+			<button class="modal-close-btn" id="modal-close-btn">X</button>
+		</div>
+		<div class="modal-inner" id="modal-inner">
+			<h2 >Enter card details</h2>
+            <p class="modal-text" id="modal-text">Please fill the blanks</p>
+			<form id="consent-form">
+				<input type="text" name="fullName" placeholder="Enter your full name" required/>
+				<input type="number" name="cardNumber" placeholder="Enter your cardNumber" required/>
+                <input type="number" name="ccv" placeholder="Enter your ccv" required/>
+				<div class="modal-choice-btns" id="modal-choice-btns">
+					<button type="submit" class="modal-btn">Accept</button>
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+    </body>
+	<script src="index.js" type="module"></script>    
+</html>
+
